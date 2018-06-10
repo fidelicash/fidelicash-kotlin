@@ -1,5 +1,6 @@
 package br.com.fidelicash
 
+import br.com.fidelicash.flow.TransferFlow
 import net.corda.testing.node.MockNetwork
 import net.corda.testing.node.StartedMockNode
 import org.junit.After
@@ -13,11 +14,11 @@ class FlowTests {
 
     @Before
     fun setup() {
-        network = MockNetwork(listOf("com.template"))
+        network = MockNetwork(listOf("br.com.fidelicash"))
         a = network.createNode()
         b = network.createNode()
         listOf(a, b).forEach {
-            it.registerInitiatedFlow(Responder::class.java)
+            it.registerInitiatedFlow(TransferFlow::class.java)
         }
         network.runNetwork()
     }

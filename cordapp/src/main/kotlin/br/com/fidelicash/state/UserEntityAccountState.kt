@@ -34,9 +34,9 @@ data class UserEntityAccountState(  val nodeHost: Party,
         class PersistentTransferState (
                 @Column(name = "from")
                 var from: String = "",
-                @Column(name = "from")
+                @Column(name = "to")
                 var to: String = "",
-                @Column(name = "from")
+                @Column(name = "value")
                 var value: Int = 0
 
         ) : PersistentState()

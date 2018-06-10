@@ -5,7 +5,7 @@ import net.corda.core.contracts.*
 import net.corda.core.contracts.Requirements.using
 import net.corda.core.transactions.LedgerTransaction
 
-const val TRANSFER_CONTRACT_ID = "br.com.fidelicash.Transfer"
+const val TRANSFER_CONTRACT_ID = "br.com.fidelicash.contract.TransferContract"
 
 class TransferContract: Contract {
 
