@@ -1,0 +1,38 @@
+2018-06-10 00:16:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE TRANSFERENCIAS (
+       OUTPUT_INDEX INTEGER NOT NULL,
+        TRANSACTION_ID VARCHAR(64) NOT NULL,
+        FROM[*] VARCHAR(255),
+        TO VARCHAR(255),
+        VALUE INTEGER,
+        PRIMARY KEY (OUTPUT_INDEX, TRANSACTION_ID)
+    ) "; expected "identifier"; SQL statement:
+
+    create table transferencias (
+       output_index integer not null,
+        transaction_id varchar(64) not null,
+        from varchar(255),
+        to varchar(255),
+        value integer,
+        primary key (output_index, transaction_id)
+    ) [42001-194]
+2018-06-10 00:31:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+    CREATE TABLE TRANSFERENCIAS (
+       OUTPUT_INDEX INTEGER NOT NULL,
+        TRANSACTION_ID VARCHAR(64) NOT NULL,
+        FROM[*] VARCHAR(255),
+        TO VARCHAR(255),
+        VALUE INTEGER,
+        PRIMARY KEY (OUTPUT_INDEX, TRANSACTION_ID)
+    ) "; expected "identifier"; SQL statement:
+
+    create table transferencias (
+       output_index integer not null,
+        transaction_id varchar(64) not null,
+        from varchar(255),
+        to varchar(255),
+        value integer,
+        primary key (output_index, transaction_id)
+    ) [42001-194]
