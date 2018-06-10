@@ -1,4 +1,4 @@
-package com.template
+package br.com.fidelicash
 
 import co.paralleluniverse.fibers.Suspendable
 import net.corda.core.flows.*

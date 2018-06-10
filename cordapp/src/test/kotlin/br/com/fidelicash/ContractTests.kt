@@ -1,4 +1,4 @@
-package com.template
+package br.com.fidelicash
 
 import net.corda.testing.node.MockServices
 import org.junit.Test

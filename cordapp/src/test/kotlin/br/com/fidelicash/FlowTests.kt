@@ -1,4 +1,4 @@
-package com.template
+package br.com.fidelicash
 
 import net.corda.testing.node.MockNetwork
 import net.corda.testing.node.StartedMockNode
